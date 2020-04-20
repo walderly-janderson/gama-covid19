@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body /* corpo da página*/
+{
+    background-color:orangered;
+     
+}
+
+
+nav#menu ul   /* menu principal */
+{
+    list-style: none; /* comando para tirar as marcações do menu  */
+    position: absolute; /* posição fixa do menu conforme abaixo  */
+    top: -3px; /* fixação do menu na parte superior  */
+    left: 910px; /* fixação do menu na parte lateral  */
+}  
+
+nav#menu li 
+{
+    display: inline-block;           /* deixar as opções de menu uma ao lado da outra horizontal  */
+    background-color: black;   /* cor de fundo atras do menu */
+    padding: 10px;                   /* comando para aumentar o tamanho da cor atras do menu  */
+    margin: 2px;                     /* comando para tirar dar espaçamento entre as opções do menu  */
+    transition: background-color 1s; /* comando para pausar por 1 segundo a mudança de cor do menu  */
+}
+
+nav#menu li:hover /* comando para mudar a cor de cada opção do menu quando passar com o mouse por cima */
+{
+    background-color: orangered;
+    
+}
+
+nav#menu
+{
+display: block; /* comando para deixar o menu flutuando na parte superior */
+
+}
+
+nav#menu a
+{
+    color: white; /* definição de cor da letra das opções do menu dentro do menu */
+    text-decoration: none; /* exclusão do link em cor azul que fica de baixo das opções do menu */
+}
+
+nav#menu a:hover /* quando usuario passar com mouse em cima das opçoes abaixo é criado o link */
+{
+text-decoration: underline;
+}
+
+div#conteudo
+{
+    /*width: 1000px; */
+    background-color: white;
+    margin: 55px 20px 100px 20px; /* (parte externa) bordas do conteudo da página cima, direita, baixo e esquerda (a opção auto faz com que o navegador tome conta)*/
+    padding: 20px 20px 20px 20px; /* (parte interna) bordas do conteudo da página cima, direita, baixo e esquerda (a opção auto faz com que o navegador tome conta)*/
+    box-shadow: 2px 2px 10px; /* borda escura em volta do conteudo da página*/
+}
+
+
+#cabecalho
+{
+    width: 500px;
+    height: 70%;
+    /* background: url("imagem/covid19.jpg"); 
+    opacity: 0.5; */
+    animation-name: mudacor;
+    animation-duration: 10s;
+    color: black;
+}
+
+@keyframes mudacor {
+    from{ color: red}
+    to {color: black}
+}
+
+#icone
+{
+width: 500px;
+height: 130px;
+opacity: 0.3; 
+margin-top: -140px;
+position: absolute;
+}
+
+.texto1
+{
+    display: inline-block;
+    width: 500px;
+    height: 300;
+    vertical-align: top;
+    background-color: white;
+    margin: 20px; /* espaçamento entre as duas colunas de texto */
+    padding: 0px 40px; /* comprimento x largura*/
+     text-align: justify;
+
+}
+
+div#rodape
+{
+    background-color: black; /*-cor do fundo do rodapé*/
+    color: orangered;  /*cor das palavras do rodapé*/
+    text-align: center; /* centralização do texto*/
+    margin-top: -98px; /* subida do rodapé para proximo do formulario*/
+    height: 120px; /* tamanho do rodapé */
+}
+
+div#rodape p
+{
+    padding: 35px; /* descido das palavras do rodapé para centralizalo*/
+    font-size: 21px; /* tamanho da fonte*/
+    font-family: cursive; /* formato da fonte*/
+    
+}
+
+
+div.texto1 h2
+{
+    font-size: 15px;
+}
+
+div.texto1 h3
+{
+    font-size: 11px;
+}
+
+
+footer#rodape
+{
+    clear: both;
+    text-align: center;
+}
+
+
+
+
+
+
+
